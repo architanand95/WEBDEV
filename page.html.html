@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ASSIGNMENT2A</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        #laal {
+            color: red;
+        }
+
+        .arc {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /* display: flex;
+            flex-direction: row; */
+            position: relative;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+
+        #btn {
+            height: 26;
+            width: 25;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><img src="poster.jpg" alt="image" width="500" height="600" id="me"></li>
+
+            <li>
+                <div class="arc">
+                    <div class=" heading">
+                        <h3>Halo 2 Video Game</h3>
+                        <p><em>Price : $50.00</em> </p>
+                        <h1>On Sale! $45.00</h1>
+                    </div>
+                    <div class="bgmusic">
+                        <audio src="sample-6s.wav" id="a1"></audio>
+                    </div>
+                    <div id="star">
+                        <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,1 4,18 19,6 1,6 16,18" fill="goldenrod" />
+                        </svg>
+                        <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,1 4,18 19,6 1,6 16,18" fill="goldenrod" />
+                        </svg>
+                        <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,1 4,18 19,6 1,6 16,18" fill="goldenrod" />
+                        </svg>
+                        <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,1 4,18 19,6 1,6 16,18" fill="goldenrod" />
+                        </svg>
+                        <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,1 4,18 19,6 1,6 16,18" />
+                        </svg>
+                    </div>
+                    <div colspan=2>
+                        <span id="write">write a review |</span>
+                        <span id="read">read all reviews</span>
+                    </div>
+                </div>
+                <hr>
+                <svg width="20" height="89" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="" />
+                </svg>
+                <br>
+                <hr>
+                <div id="laal">
+                    <strong><em>Only 9 left</em></strong>
+                </div>
+                <br>
+                <button id="btn"><img src="icon2.png" width="25" height="26">Like</button>
+                <button id="btn"><img src="icon.png" width="25" height="26">tweet</button>
+                <button id="btn"><img src="icon3.png" width="35" height="26"></button>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+<script>
+    $('#me').click(function () {
+        $("#a1")[0].play();
+    });
+    $('p').click(function () {
+        $('p').css("color", "red");
+        $('p').css({ 'font-size': '45px' });
+    });
+    document.querySelector('h3').addEventListener('click',() => {
+        alert('the discount sale is going to end');
+    });
+
+</script>
+
+</html>
