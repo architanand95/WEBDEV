@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second_part</title>
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <p><strong> PART 2A</strong></p>
+    <br>
+    <p id="p1"><br> yeah you heard it right</p>
+    <hr>
+    <p><strong>PART 2B</strong></p>
+    <br>
+    <div>
+        <div class="div1">
+            yup ....they hid me..=)
+        </div>
+        <div class="div2">
+            my partner haas been hidden....haa...haaa....haaa
+        </div>
+    </div>
+    <hr>
+    <strong>
+        PART 2C
+    </strong>
+    <div class="arc97">THE AUTHOR IS : <br></div>
+    
+</body>
+<script src="jquery-3.6.1.min.js"></script>
+
+<script>
+    $("#p1").prepend("I Love JQuery");
+    $('.div1').click(function(){
+        $('.div1').hide()});
+    $.ajax({
+        type:"GET",
+        url:"bookstore.json",
+        success:function(response)
+        {
+            $(".arc97").append(response.Author+"<br>");
+        }
+    })
+</script>
+
+</html>
