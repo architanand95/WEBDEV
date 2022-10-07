@@ -1,0 +1,19 @@
+body
+{
+    background-color: antiquewhite;
+    text-align: center;
+}
+.a3
+{
+    text-align: justify;
+    padding-left: 30px;
+
+}
+table
+{
+    align-items: center;
+    position: relative;
+    margin-left: 250px;
+    background-color: #ffb050;
+    width:900px;
+}
