@@ -8,30 +8,29 @@
         body {
             background-color: azure;
         }
-
+        
         #laal {
             color: red;
         }
-
+        
         .arc {
             flex-direction: column;
             display: flex;
         }
-
+        
         .navbar ul {
             overflow: auto;
             /* display: flex;
             flex-direction: row; */
             position: relative;
         }
-
+        
         .navbar li {
             float: left;
             list-style: none;
             margin: 13px 20px;
-
         }
-
+        
         #btn {
             height: 26;
             width: 25;
@@ -42,7 +41,7 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><img src="poster.jpg" alt="image" width="500" height="600" id="me"></li>
+            <li><img src="assets/poster.jpg" alt="image" width="500" height="600" id="me"></li>
 
             <li>
                 <div class="arc">
@@ -52,7 +51,7 @@
                         <h1>On Sale! $45.00</h1>
                     </div>
                     <div class="bgmusic">
-                        <audio src="sample-6s.wav" id="a1"></audio>
+                        <audio src="assets/sample-6s.wav" id="a1"></audio>
                     </div>
                     <div id="star">
                         <svg width="20" height="29" xmlns="http://www.w3.org/2000/svg">
@@ -86,26 +85,27 @@
                     <strong><em>Only 9 left</em></strong>
                 </div>
                 <br>
-                <button id="btn"><img src="icon2.png" width="25" height="26">Like</button>
-                <button id="btn"><img src="icon.png" width="25" height="26">tweet</button>
-                <button id="btn"><img src="icon3.png" width="35" height="26"></button>
+                <button id="btn"><img src="assets/icon2.png" width="25" height="26">Like</button>
+                <button id="btn"><img src="assets/icon.png" width="25" height="26">tweet</button>
+                <button id="btn"><img src="assets/icon3.png" width="35" height="26"></button>
             </li>
         </ul>
     </nav>
 </body>
-<script src="jquery-3.6.1.min.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
 <script>
-    $('#me').click(function () {
+    $('#me').click(function() {
         $("#a1")[0].play();
     });
-    $('p').click(function () {
+    $('p').click(function() {
         $('p').css("color", "red");
-        $('p').css({ 'font-size': '45px' });
+        $('p').css({
+            'font-size': '45px'
+        });
     });
-    document.querySelector('h3').addEventListener('click',() => {
+    document.querySelector('h3').addEventListener('click', () => {
         alert('the discount sale is going to end');
     });
-
 </script>
 
 </html>
